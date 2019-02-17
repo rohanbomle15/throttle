@@ -1,0 +1,217 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tab_panel" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layoutRideDetailsOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dip" >
+
+                <ImageView
+                    android:id="@+id/imgRideDetailsRider1"
+                    android:layout_width="@dimen/join_club_rider_img_width"
+                    android:layout_height="@dimen/join_club_rider_img_height"
+                    android:layout_margin="5dip"
+                    android:src="@drawable/rider_icon" />
+
+                <ImageView
+                    android:id="@+id/imgRideDetailsRider2"
+                    android:layout_width="@dimen/join_club_rider_img_width"
+                    android:layout_height="@dimen/join_club_rider_img_height"
+                    android:layout_margin="5dip"
+                    android:src="@drawable/rider_icon" />
+
+                <ImageView
+                    android:id="@+id/imgRideDetailsRider3"
+                    android:layout_width="@dimen/join_club_rider_img_width"
+                    android:layout_height="@dimen/join_club_rider_img_height"
+                    android:layout_margin="5dip"
+                    android:src="@drawable/rider_icon" />
+
+                <ImageView
+                    android:id="@+id/imgRideDetailsRider4"
+                    android:layout_width="@dimen/join_club_rider_img_width"
+                    android:layout_height="@dimen/join_club_rider_img_height"
+                    android:layout_margin="5dip"
+                    android:src="@drawable/rider_icon" />
+
+                <Button
+                    android:id="@+id/imgRideDetailsRidersButton"
+                    android:layout_width="@dimen/join_club_rider_img_width"
+                    android:layout_height="@dimen/join_club_rider_img_height"
+                    android:layout_margin="5dip"
+                    android:background="@drawable/club_logo_red_button"
+                    android:textColor="@color/white_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dip"
+                android:background="@drawable/divider_horizontal" />
+
+            <LinearLayout
+                android:id="@+id/layoutRideDetailsFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/yellow_color" >
+
+                <RelativeLayout
+                    android:id="@+id/RideDetailsRel1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/lblRideDetailsDuration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:text="Ride Duration" />
+
+                    <TextView
+                        android:id="@+id/txtRideDetailsDuration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/lblRideDetailsDuration"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal"
+                        android:text="-" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="2dip"
+                    android:layout_height="60dip"
+                    android:background="@drawable/divider_vertical" />
+
+                <RelativeLayout
+                    android:id="@+id/RideDetailsRel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/lblRideDetailsLeadBy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"
+                        android:text="Lead By" />
+
+                    <TextView
+                        android:id="@+id/txtRideDetailsLeadBy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/lblRideDetailsLeadBy"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:gravity="center_horizontal"
+                        android:text="-" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="2dip"
+                    android:layout_height="60dip"
+                    android:background="@drawable/divider_vertical" />
+
+                <RelativeLayout
+                    android:id="@+id/RideDetailsRel3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/lblRideDetailsOrganizer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold"
+                        android:text="Organizer" />
+
+                    <TextView
+                        android:id="@+id/txtRideDetailsOrganizer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/lblRideDetailsOrganizer"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal"
+                        android:text="-" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dip"
+                android:layout_marginBottom="10dip"
+                android:background="@drawable/divider_horizontal" />
+
+            <LinearLayout
+                android:id="@+id/layoutRideDetailsThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <ImageView
+                    android:id="@+id/imgRideDetailsPhotos1"
+                    android:layout_width="@dimen/join_club_photos_img_width"
+                    android:layout_height="@dimen/join_club_photos_img_height"
+                    android:layout_margin="5dip"
+                    android:layout_weight="0.3"
+                    android:src="@drawable/riders_photos_default" />
+
+                <ImageView
+                    android:id="@+id/imgRideDetailsPhotos2"
+                    android:layout_width="@dimen/join_club_photos_img_width"
+                    android:layout_height="@dimen/join_club_photos_img_height"
+                    android:layout_margin="5dip"
+                    android:layout_weight="0.3"
+                    android:src="@drawable/riders_photos_default" />
+
+                <Button
+                    android:id="@+id/imgRideDetailsRidesPhotosButton"
+                    android:layout_width="@dimen/join_club_photos_img_width"
+                    android:layout_height="@dimen/join_club_photos_img_height"
+                    android:layout_margin="5dip"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/red_button"
+                    android:text="Photos"
+                    android:textColor="@color/white_color"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dip"
+                android:layout_marginBottom="10dip"
+                android:background="@drawable/divider_horizontal" />
+
+            <ListView
+                android:id="@+id/listRideDetailsLocations"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

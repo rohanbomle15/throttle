@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tab_panel"
+    android:padding="20dip" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/layoutBasicOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/edtBasicName"
+                style="@style/edit_text"
+                android:hint="@string/str_name" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <FrameLayout
+                    android:id="@+id/frameBasicDOBText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="0.5" >
+
+                    <EditText
+                        android:id="@+id/edtBasicDOB"
+                        style="@style/edit_text"
+                        android:hint="@string/str_dob" />
+
+                    <ImageView
+                        android:id="@+id/imgBasicDatePicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dip"
+                        android:layout_gravity="right"
+                        android:src="@drawable/calender_icon" />
+                </FrameLayout>
+
+                <EditText
+                    android:id="@+id/edtBasicCity"
+                    style="@style/edit_text"
+                    android:layout_weight="0.5"
+                    android:hint="@string/str_city" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <EditText
+                    android:id="@+id/edtBasicMobileNo"
+                    style="@style/edit_text"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="0.5"
+                    android:hint="@string/str_mobile_no"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/edtBasicGender"
+                    style="@style/spinner_style"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight="0.5"
+                    android:prompt="@string/str_gender" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtBasicEmail"
+                style="@style/edit_text"
+                android:hint="@string/str_email_id" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <EditText
+                    android:id="@+id/edtBasicEmergencyNo"
+                    style="@style/edit_text"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="0.5"
+                    android:hint="@string/str_emergency_no"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/edtBasicBloodGroup"
+                    style="@style/spinner_style"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight="0.5"
+                    android:hint="@string/str_blood_group" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutBasicTwo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:weightSum="1.0" >
+
+                <Button
+                    android:id="@+id/btnBasicSave"
+                    style="@style/btnGrey"
+                    android:layout_marginRight="8dip"
+                    android:layout_weight="0.5"
+                    android:text="@string/str_btn_save" />
+
+                <Button
+                    android:id="@+id/btnBasicRemove"
+                    style="@style/btnGrey"
+                    android:layout_marginRight="8dip"
+                    android:layout_weight="0.5"
+                    android:text="@string/str_btn_remove" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

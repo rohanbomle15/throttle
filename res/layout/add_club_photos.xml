@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tab_panel"
+    android:padding="20dip" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/layoutCreateClubDesOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:text="Upload your club photos let the riders check all the fun" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dip"
+                android:layout_marginBottom="10dip"
+                android:background="@drawable/divider_horizontal" />
+
+            <Button
+                android:id="@+id/btnOpenImageGallery"
+                style="@style/btnTakePhoto"
+                android:layout_marginBottom="10dip"
+                android:drawableLeft="@drawable/gallery_icon"
+                android:text="@string/str_open_image_gallery" />
+
+            <Button
+                android:id="@+id/btnTakeAPhoto"
+                style="@style/btnTakePhoto"
+                android:layout_marginBottom="10dip"
+                android:drawableLeft="@drawable/camera_icon"
+                android:text="@string/str_take_photo" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dip"
+                android:layout_marginBottom="10dip"
+                android:background="@drawable/divider_horizontal" />
+
+            <GridLayout
+                android:id="@+id/ridePhotosGridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:horizontalSpacing="2dp"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="2dp" />
+
+            <Button
+                android:id="@+id/btnCreateClubPhotos"
+                style="@style/btnGrey"
+                android:layout_marginRight="8dip"
+                android:layout_weight="0.5"
+                android:text="@string/str_btn_create" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

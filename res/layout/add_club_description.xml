@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tab_panel"
+    android:padding="20dip" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/layoutAddClubDesOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/edtAddClubDesMeetingPoint"
+                style="@style/edit_text"
+                android:hint="Meeting point, the place rides usually meet" />
+
+            <EditText
+                android:id="@+id/edtAddClubDesMeetingDays"
+                style="@style/edit_text"
+                android:layout_marginRight="5dip"
+                android:layout_weight="0.5"
+                android:hint="Your weekly, monthly or usual meeting day" />
+
+            <EditText
+                android:id="@+id/edtAddClubVision"
+                style="@style/edit_text_area"
+                android:hint="Describe your club, what is your vision, things or benefits that riders would get for beign a part of this club" />
+
+            <Button
+                android:id="@+id/btnAddClubDesNext"
+                style="@style/btnGrey"
+                android:layout_marginRight="8dip"
+                android:layout_weight="0.5"
+                android:onClick="onAddClubDesNext"
+                android:text="@string/str_btn_next" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

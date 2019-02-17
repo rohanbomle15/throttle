@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tab_panel"
+    android:padding="20dip" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/layoutAddRideRouteOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/edtAddRideRouteDestination"
+                style="@style/edit_text"
+                android:hint="Ride Destination" />
+
+            <Spinner
+                android:id="@+id/spnAddRideRouteOptions"
+                style="@style/spinner_style"
+                android:layout_marginBottom="10dip" >
+            </Spinner>
+
+            <EditText
+                android:id="@+id/edtAddRideRouteHaltLocation"
+                style="@style/edit_text"
+                android:hint="Halt location like hotel, cafe, dhaba other" />
+
+            <LinearLayout
+                android:id="@+id/layoutAddRideRouteTwo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:weightSum="1.0" >
+
+                <Button
+                    android:id="@+id/btnAddRideRouteSave"
+                    style="@style/btnGrey"
+                    android:layout_marginRight="8dip"
+                    android:layout_weight="0.5"
+                    android:text="@string/str_btn_save" />
+
+                <Button
+                    android:id="@+id/btnAddRideRouteRemove"
+                    style="@style/btnGrey"
+                    android:layout_marginRight="8dip"
+                    android:layout_weight="0.5"
+                    android:text="@string/str_btn_remove" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dip"
+                android:layout_marginBottom="10dip"
+                android:background="@drawable/divider_horizontal" />
+
+            <Button
+                android:id="@+id/btnAddRideRouteNext"
+                style="@style/btnGrey"
+                android:layout_marginRight="8dip"
+                android:layout_weight="0.5"
+                android:text="@string/str_btn_next" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

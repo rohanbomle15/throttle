@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tab_panel"
+    android:padding="20dip" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/layoutAddClubDesOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/edtAddRideName"
+                style="@style/edit_text"
+                android:hint="Ride Name" />
+
+            <EditText
+                android:id="@+id/edtAddRideClubName"
+                style="@style/edit_text"
+                android:layout_marginRight="5dip"
+                android:hint="Club Name" />
+
+            <EditText
+                android:id="@+id/edtAddRideLeadName"
+                style="@style/edit_text"
+                android:layout_marginRight="5dip"
+                android:hint="Lead Name" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <FrameLayout
+                    android:id="@+id/frameAddRideStart"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="0.5" >
+
+                    <EditText
+                        android:id="@+id/edtAddRideStartDate"
+                        style="@style/edit_text"
+                        android:hint="Start Date" />
+
+                    <ImageView
+                        android:id="@+id/imgAddRideStartDatePicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:src="@drawable/calender_icon" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameAddRideDOBEnd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginBottom="10dip"
+                    android:layout_weight="0.5" >
+
+                    <EditText
+                        android:id="@+id/edtAddRideEndDate"
+                        style="@style/edit_text"
+                        android:hint="End Date" />
+
+                    <ImageView
+                        android:id="@+id/imgAddRideEndDatePicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:src="@drawable/calender_icon" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <EditText
+                    android:id="@+id/edtAddRideApproxKM"
+                    style="@style/edit_text"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="0.5"
+                    android:hint="Approx KM"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/edtAddRidePrice"
+                    style="@style/edit_text"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight="0.5"
+                    android:hint="Ride Price" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spnAddRideInfoOptions"
+                style="@style/spinner_style"
+                android:layout_marginBottom="10dip" >
+            </Spinner>
+
+            <Button
+                android:id="@+id/btnAddRideInfoNext"
+                style="@style/btnGrey"
+                android:layout_marginRight="8dip"
+                android:layout_weight="0.5"
+                android:text="@string/str_btn_next" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tab_panel"
+    android:padding="20dip" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/layoutProductOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/edtAddProductDescription"
+                style="@style/edit_text_area"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="0.5"
+                android:hint="Describe the product details, the condition of the product, reasons for selling it and how it is still a useful product"
+                android:maxLines="7" />
+
+            <Spinner
+                android:id="@+id/spnAddProductContactType"
+                style="@style/spinner_style"
+                android:layout_marginBottom="10dip" >
+            </Spinner>
+
+            <Button
+                android:id="@+id/btnAddProductDetailsNext"
+                style="@style/btnGrey"
+                android:layout_marginRight="8dip"
+                android:layout_weight="0.5"
+                android:text="@string/str_btn_next" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

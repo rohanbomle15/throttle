@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout
+        android:id="@+id/storeBikesSearchFrame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutClubButtons" >
+
+        <EditText
+            android:id="@+id/edtSearchStoreBikes"
+            style="@style/edit_text"
+            android:layout_margin="10dip"
+            android:hint="@string/hint_search_by_name" />
+
+        <ImageView
+            android:id="@+id/imgBtnStoreBikesSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/search_icon" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/productListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/storeBikesSearchFrame"
+        android:dividerHeight="0dip"
+        android:fadeScrollbars="true"
+        android:smoothScrollbar="true" >
+    </ListView>
+
+</RelativeLayout>

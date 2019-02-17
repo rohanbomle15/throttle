@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tab_panel"
+    android:padding="20dip" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/layoutPhotosOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/image_holder"
+                android:orientation="horizontal"
+                android:padding="10dip"
+                android:weightSum="1.0" >
+
+                <ImageView
+                    android:id="@+id/imgPhotosUploadPic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/upload_border_bg"
+                    android:scaleType="center"
+                    android:src="@drawable/user_icon" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txtAddBikePhoto"
+                        style="@style/Heading4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add Photo" />
+
+                    <Button
+                        android:id="@+id/txtOpenImageGallery"
+                        style="@style/btnOpenGallery"
+                        android:drawableLeft="@drawable/gallery_icon"
+                        android:onClick="onOpenImageGallery"
+                        android:layout_margin="5dip"
+                        android:text="@string/str_open_image_gallery" />
+
+                    <Button
+                        android:id="@+id/txtTakeAPhoto"
+                        style="@style/btnTakePhoto"
+                        android:layout_margin="5dip"
+                        android:drawableLeft="@drawable/camera_icon"
+                        android:onClick="onOpenImageGallery"
+                        android:text="@string/str_take_photo" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Gallery
+                android:id="@+id/galleryPhotos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip" />
+
+            <LinearLayout
+                android:id="@+id/layoutPhotosTwo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:weightSum="1.0" >
+
+                <Button
+                    android:id="@+id/btnSavePhoto"
+                    style="@style/btnGrey"
+                    android:layout_marginRight="8dip"
+                    android:layout_weight="0.5"
+                    android:text="@string/str_btn_save" />
+
+                <Button
+                    android:id="@+id/btnRemovePhoto"
+                    style="@style/btnGrey"
+                    android:layout_marginRight="8dip"
+                    android:layout_weight="0.5"
+                    android:text="@string/str_btn_remove" />
+            </LinearLayout>
+
+            <GridLayout
+                android:id="@+id/photosGridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:horizontalSpacing="2dp"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="2dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

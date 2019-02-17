@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tab_panel"
+    android:padding="20dip" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/layoutAddProductOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/edtAddProductName"
+                style="@style/edit_text"
+                android:hint="Product Name" />
+
+            <EditText
+                android:id="@+id/edtAddProductCategory"
+                style="@style/edit_text"
+                android:hint="Category" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <EditText
+                    android:id="@+id/edtAddProductSubCategory1"
+                    style="@style/edit_text"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="0.5"
+                    android:hint="Sub Category 1" />
+
+                <EditText
+                    android:id="@+id/edtAddProductSubCategory2"
+                    style="@style/edit_text"
+                    android:layout_weight="0.5"
+                    android:hint="Sub Category 2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <EditText
+                    android:id="@+id/edtAddProductCity"
+                    style="@style/edit_text"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="0.5"
+                    android:hint="City" />
+
+                <EditText
+                    android:id="@+id/edtAddProductLocality"
+                    style="@style/edit_text"
+                    android:layout_weight="0.5"
+                    android:hint="Locality" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spnAddProductSellAuction"
+                style="@style/spinner_style"
+                android:layout_marginBottom="10dip" >
+            </Spinner>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <EditText
+                    android:id="@+id/edtAddProductMidBidPrice"
+                    style="@style/edit_text"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="0.5"
+                    android:hint="Mid bid price(INR)" />
+
+                <FrameLayout
+                    android:id="@+id/frameAddProductDateText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5" >
+
+                    <EditText
+                        android:id="@+id/edtAddProductBidDate"
+                        style="@style/edit_text"
+                        android:hint="Last Date" />
+
+                    <ImageView
+                        android:id="@+id/imgAddProductBidDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dip"
+                        android:layout_gravity="right"
+                        android:src="@drawable/calender_icon" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spnAddProductOldNew"
+                style="@style/spinner_style"
+                android:layout_marginBottom="10dip" >
+            </Spinner>
+
+            <Button
+                android:id="@+id/btnAddProductNext"
+                style="@style/btnGrey"
+                android:layout_marginRight="8dip"
+                android:layout_weight="0.5"
+                android:onClick="onRemoveBasic"
+                android:text="@string/str_btn_next" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:padding="10dip" >
+
+    <RelativeLayout
+        android:id="@+id/newsDetailsMainHolder"
+        android:layout_width="match_parent"
+        android:layout_height="180dip"
+        android:background="@drawable/rounded_black_button" >
+
+        <ImageView
+            android:id="@+id/imgNewsDetail"
+            android:layout_width="match_parent"
+            android:layout_height="180dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/banner_image" />
+
+        <RelativeLayout
+            android:id="@+id/newsTextHolder"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black_color" >
+
+            <FrameLayout
+                android:id="@+id/newsDateHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/news_yellow_arrow" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip" >
+
+                    <TextView
+                        android:id="@+id/txtNewsDateDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dip"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="32"
+                        android:textColor="@color/red_color"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/txtNewsDateDetails"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/txtNewsDayDetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dip"
+                            android:singleLine="true"
+                            android:text="FRI"
+                            android:textColor="@color/black_color"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtNewsMonthYearDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dip"
+                            android:singleLine="true"
+                            android:text="Jan 2015"
+                            android:textColor="@color/black_color"
+                            android:textSize="12dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btnLauchNews"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dip"
+                android:background="@drawable/rounded_yellow_button"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:text="Launch"
+                android:textColor="@color/black_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/newDeailtsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/newsDetailsMainHolder"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtNewsDetailsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:text="Title"
+            android:textColor="@color/black_color"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        
+        <View android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="@drawable/divider_horizontal"
+            android:layout_marginBottom="10dip"/>
+
+        <TextView
+            android:id="@+id/txtNewsDetailsDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="@color/black_color"
+            android:layout_marginBottom="10dip"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtNewsDetailsSoruce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soruce"
+            android:textColor="@color/black_color"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

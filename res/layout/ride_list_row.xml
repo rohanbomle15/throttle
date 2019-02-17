@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/SingleProfile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_gray_border"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <RelativeLayout
+        android:id="@+id/frameRideListItem"
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:background="@color/grey_color" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@+id/frameRideKM"
+            android:background="@drawable/clublist_item_name_km_bg"
+            android:paddingLeft="10dip" >
+
+            <TextView
+                android:id="@+id/txtRideName"
+                style="@style/Heading4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtRideDateDays"
+                android:text="Ride Name" />
+
+            <TextView
+                android:id="@+id/txtRideDateDays"
+                style="@style/Heading6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="00 km" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/frameRideKM"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/km_indicator" >
+
+            <TextView
+                android:id="@+id/txtRideKM"
+                style="@style/Heading4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/txtRideKMText"
+                style="@style/Heading5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/txtClubRidersNumber"
+                android:background="@drawable/km_indicator_bottom"
+                android:gravity="center"
+                android:text="KM" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/imgBtnRideOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="20dip"
+            android:background="@null"
+            android:focusable="false"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>

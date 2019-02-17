@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tab_panel"
+    android:padding="20dip" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/layoutAddClubOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/edtAddClubName"
+                style="@style/edit_text"
+                android:hint="Club Name" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <FrameLayout
+                    android:id="@+id/frameAddClubDateText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="0.5" >
+
+                    <EditText
+                        android:id="@+id/edtAddClubDate"
+                        style="@style/edit_text"
+                        android:hint="Established" />
+
+                    <ImageView
+                        android:id="@+id/imgAddClubDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dip"
+                        android:layout_gravity="right"
+                        android:src="@drawable/calender_icon" />
+                </FrameLayout>
+
+                <EditText
+                    android:id="@+id/edtAddClubCity"
+                    style="@style/edit_text"
+                    android:layout_weight="0.5"
+                    android:hint="@string/str_city" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtAddClubContactNo"
+                style="@style/edit_text"
+                android:layout_marginRight="5dip"
+                android:layout_weight="0.5"
+                android:hint="Club contact number"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/edtAddClubBikeBrand"
+                style="@style/edit_text"
+                android:layout_marginRight="5dip"
+                android:layout_weight="0.5"
+                android:hint="What brand of bikes belong to this club" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:background="@drawable/border_bg"
+                android:orientation="horizontal"
+                android:padding="5dip"
+                android:weightSum="1.0" >
+
+                <ImageView
+                    android:id="@+id/imgAddClubUploadPic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="120dip"
+                    android:layout_margin="5dip"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/upload_border_bg"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/uplaod_club_logo" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txtAddBikePhoto"
+                        style="@style/Heading4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add Club Photo" />
+
+                    <Button
+                        android:id="@+id/txtOpenImageGallery"
+                        style="@style/btnOpenGallery"
+                        android:layout_margin="5dip"
+                        android:drawableLeft="@drawable/gallery_icon"
+                        android:text="@string/str_open_image_gallery" />
+
+                    <Button
+                        android:id="@+id/txtTakeAPhoto"
+                        style="@style/btnTakePhoto"
+                        android:layout_margin="5dip"
+                        android:drawableLeft="@drawable/camera_icon"
+                        android:text="@string/str_take_photo" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddClubNext"
+                style="@style/btnGrey"
+                android:layout_marginRight="8dip"
+                android:layout_weight="0.5"
+                android:onClick="onRemoveBasic"
+                android:text="@string/str_btn_next" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

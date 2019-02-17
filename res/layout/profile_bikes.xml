@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tab_panel"
+    android:padding="20dip" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/layoutBikesOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <EditText
+                    android:id="@+id/edtBikesRegNo"
+                    style="@style/edit_text"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="0.5"
+                    android:hint="Reg. No" />
+
+                <EditText
+                    android:id="@+id/edtBikesChassisNo"
+                    style="@style/edit_text"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight="0.5"
+                    android:hint="Chassis No" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <EditText
+                    android:id="@+id/edtBikesMake"
+                    style="@style/edit_text"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="0.5"
+                    android:hint="Make" />
+
+                <EditText
+                    android:id="@+id/edtBikesModel"
+                    style="@style/edit_text"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight="0.5"
+                    android:hint="Model" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:background="@drawable/image_holder"
+                android:orientation="horizontal"
+                android:padding="10dip"
+                android:weightSum="1.0" >
+
+                <ImageView
+                    android:id="@+id/imgBikesUploadPic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/upload_border_bg"
+                    android:src="@drawable/sample_bike" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txtBikesAddBikePhoto"
+                        style="@style/Heading4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_add_bike_photo" />
+
+                    <Button
+                        android:id="@+id/txtBikesOpenImageGallery"
+                        style="@style/btnOpenGallery"
+                        android:drawableLeft="@drawable/gallery_icon"
+                        android:text="@string/str_open_image_gallery"
+                        android:layout_marginBottom="10dip" />
+
+                    <TextView
+                        android:id="@+id/txtBikesTakeAPhoto"
+                        style="@style/btnTakePhoto"
+                        android:drawableLeft="@drawable/camera_icon"
+                        android:text="@string/str_take_photo" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutBikesTwo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:weightSum="1.0" >
+
+                <Button
+                    android:id="@+id/btnBikeSave"
+                    style="@style/btnGrey"
+                    android:layout_marginRight="8dip"
+                    android:layout_weight="0.5"
+                    android:text="@string/str_btn_save" />
+
+                <Button
+                    android:id="@+id/btnBikeRemove"
+                    style="@style/btnGrey"
+                    android:layout_marginRight="8dip"
+                    android:layout_weight="0.5"
+                    android:text="@string/str_btn_remove" />
+            </LinearLayout>
+
+            <GridLayout
+                android:id="@+id/bikesGridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:horizontalSpacing="2dp"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="2dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

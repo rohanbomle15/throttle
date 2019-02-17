@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingBottom="20dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="20dip" >
+
+    <RelativeLayout
+        android:id="@+id/loginRelLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="300dip"
+        android:background="@drawable/bg_patch"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="30dip" >
+
+        <TextView
+            android:id="@+id/txtSignUp"
+            style="@style/Heading1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dip"
+            android:text="@string/str_btn_sign_up" />
+
+        <FrameLayout
+            android:id="@+id/frameLoginUserNameText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtSignUp" >
+
+            <EditText
+                android:id="@+id/edtSignUpFullName"
+                style="@style/edit_text_with_icon"
+                android:hint="@string/str_full_name" />
+
+            <ImageView
+                style="@style/edit_text_icon_spacing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_icon" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLoginPassWordText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/frameLoginUserNameText" >
+
+            <EditText
+                android:id="@+id/edtSignUpEmail"
+                style="@style/edit_text_with_icon"
+                android:hint="@string/str_email" />
+
+            <ImageView
+                style="@style/edit_text_icon_spacing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/email_icon" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btnRegister"
+            style="@style/btnOrange"
+            android:layout_below="@id/frameLoginPassWordText"
+            android:onClick="onRegister"
+            android:text="@string/str_btn_register" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loginRelLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginRelLayout1"
+        android:padding="10dip" >
+
+        <ImageView
+            android:id="@+id/imgOR"
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="40dip"
+            android:layout_marginRight="40dip"
+            android:src="@drawable/or" />
+
+        <Button
+            android:id="@+id/btnFacebook"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_below="@id/imgOR"
+            android:layout_toLeftOf="@+id/btnTwitter"
+            android:background="@drawable/facebook_icon" />
+
+        <Button
+            android:id="@+id/btnTwitter"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_below="@id/imgOR"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/twitter_icon" />
+
+        <Button
+            android:id="@+id/btnGooglePlus"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_below="@id/imgOR"
+            android:layout_toRightOf="@id/btnTwitter"
+            android:background="@drawable/g_plus_icon" />
+    </RelativeLayout>
+
+</RelativeLayout>

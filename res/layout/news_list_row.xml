@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/SingleProfile"
+    android:layout_width="match_parent"
+    android:layout_height="120dip"
+    android:background="@drawable/bottom_gray_border"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="10dip" >
+
+    <RelativeLayout
+        android:id="@+id/newsListMainHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_black_button" >
+
+        <ImageView
+            android:id="@+id/imgNews"
+            android:layout_width="match_parent"
+            android:layout_height="120dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/banner_image" />
+
+        <RelativeLayout
+            android:id="@+id/newsTextHolder"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black_color" >
+
+            <TextView
+                android:id="@+id/txtNews"
+                android:layout_width="200dip"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="5dip"
+                android:background="@color/black_color"
+                android:maxLines="3"
+                android:text="News about rides, clubs and riders"
+                android:textColor="@color/white_color" />
+
+            <FrameLayout
+                android:id="@+id/newsDateHolder"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/news_yellow_arrow" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip" >
+
+                    <TextView
+                        android:id="@+id/txtNewsDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/monthDayHolder"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="30"
+                        android:textColor="@color/red_color"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/monthDayHolder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="10dip" >
+
+                        <TextView
+                            android:id="@+id/txtNewsDay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dip"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="FRI"
+                            android:textColor="@color/black_color"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtNewsMonthYear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dip"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="Jan 2015"
+                            android:textColor="@color/black_color"
+                            android:textSize="12dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </FrameLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

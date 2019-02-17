@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layoutBikesTwo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scrolldocs"
+        android:padding="5dip"
+        android:weightSum="1.0" >
+
+        <Button
+            android:id="@+id/btnClubTopClubs"
+            style="@style/btnGrey"
+            android:layout_marginRight="8dip"
+            android:layout_weight="0.5"
+            android:onClick="onTopClubs"
+            android:text="@string/str_btn_save" />
+
+        <Button
+            android:id="@+id/btnClubMyClubs"
+            style="@style/btnGrey"
+            android:layout_marginLeft="8dip"
+            android:layout_weight="0.5"
+            android:onClick="onMyClubs"
+            android:text="@string/str_btn_remove" />
+    </LinearLayout>
+
+</RelativeLayout>

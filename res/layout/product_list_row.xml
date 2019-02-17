@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/SingleProfile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_gray_border"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="10dip" >
+
+    <RelativeLayout
+        android:id="@+id/frameProdcutListItem"
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:background="@drawable/rounded_gray_button" >
+
+        <ImageView
+            android:id="@+id/imgProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="8dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/biker_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@id/imgProduct"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtProdcutName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bike Name"
+                android:textColor="@color/white_color" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txtProcutPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:text="$45000"
+                    android:textColor="@color/white_color"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgProductOldNew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/old_icon" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtProdcutCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pune"
+                android:textColor="@color/white_color" />
+
+            <TextView
+                android:id="@+id/txtProdcutDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1/1/1111"
+                android:textColor="@color/white_color" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/yellow_slide_bg" >
+
+            <ImageView
+                android:id="@+id/imgProductLikeUnlike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/like_btn" />
+
+            <ImageView
+                android:id="@+id/imgProductOwner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="5dip"
+                android:layout_marginRight="5dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/biker_img" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

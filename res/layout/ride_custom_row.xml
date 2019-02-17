@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/back"
+        style="@style/MyListBackContent"
+        android:tag="back" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dip"
+            android:background="@color/header_and_button_color"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/rideOptionRideName"
+                style="@style/Heading5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dip"
+                android:text="Ride Name" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="1" >
+
+                    <ImageButton
+                        android:id="@+id/rideOptionClose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/arrow_right" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rideOptionsJoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <ImageButton
+                        android:id="@+id/rideOptJoinButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginTop="5dip"
+                        android:background="@null"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/join_icon" />
+
+                    <TextView
+                        android:id="@+id/rideOptJoin"
+                        style="@style/Heading5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rideOptJoinButton"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_vertical"
+                        android:text="Join"
+                        android:textIsSelectable="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rideOptionsClub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <ImageButton
+                        android:id="@+id/ridebOptClubButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginTop="5dip"
+                        android:background="@null"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/club_icon" />
+
+                    <TextView
+                        android:id="@+id/clubOptClub"
+                        style="@style/Heading5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ridebOptClubButton"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="Club"
+                        android:textIsSelectable="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rideOptionsRiders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <ImageButton
+                        android:id="@+id/rideOptRidersButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginTop="5dip"
+                        android:background="@null"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/riders_icon" />
+
+                    <TextView
+                        android:id="@+id/rideOptRiders"
+                        style="@style/Heading5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rideOptRidersButton"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="Riders"
+                        android:textIsSelectable="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rideOptionsChat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <ImageButton
+                        android:id="@+id/rideOptChatButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginTop="5dip"
+                        android:background="@null"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/chat_icon" />
+
+                    <TextView
+                        android:id="@+id/rideOptChat"
+                        style="@style/Heading5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rideOptChatButton"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="Chat"
+                        android:textIsSelectable="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/front"
+        style="@style/MyListFrontContent"
+        android:orientation="vertical"
+        android:tag="front" >
+
+        <RelativeLayout
+            android:id="@+id/frameRideListItem"
+            android:layout_width="match_parent"
+            android:layout_height="120dip"
+            android:background="@color/grey_color" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dip"
+                android:layout_toLeftOf="@+id/frameRideKM"
+                android:background="@drawable/clublist_item_name_km_bg"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/txtRideName"
+                    style="@style/Heading4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/txtRideDateDays"
+                    android:text="Ride Name" />
+
+                <TextView
+                    android:id="@+id/txtRideDateDays"
+                    style="@style/Heading6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="00 km" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frameRideKM"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/km_indicator" >
+
+                <TextView
+                    android:id="@+id/txtRideKM"
+                    style="@style/Heading4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/txtRideKMText"
+                    style="@style/Heading5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/txtClubRidersNumber"
+                    android:background="@drawable/km_indicator_bottom"
+                    android:gravity="center"
+                    android:text="KM" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/imgBtnRideOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="20dip"
+                android:background="@null"
+                android:focusable="false"
+                android:src="@drawable/arrow_left"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

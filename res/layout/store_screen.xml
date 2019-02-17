@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tab_panel" >
+
+    <Button
+        android:id="@+id/btnPostYourPorduct"
+        style="@style/btnGrey"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_margin="10dip"
+        android:text="POST YOUR PRODUCT"
+        android:textColor="@color/yellow_color"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/layoutHolderStoreOption"
+        android:layout_width="match_parent"
+        android:layout_height="150dip"
+        android:layout_below="@id/btnPostYourPorduct"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_yellow_button"
+            android:padding="2dip" >
+
+            <ImageButton
+                android:id="@+id/storeBtnBikes"
+                android:layout_width="match_parent"
+                android:layout_height="100dip"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:layout_marginTop="2dip"
+                android:background="@color/black_color"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_bikes" />
+
+            <TextView
+                style="@style/Heading4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/storeBtnBikes"
+                android:gravity="center"
+                android:text="BIKES" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_yellow_button"
+            android:padding="2dip" >
+
+            <ImageButton
+                android:id="@+id/storeBtnAccessories"
+                android:layout_width="match_parent"
+                android:layout_height="100dip"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:layout_marginTop="2dip"
+                android:background="@color/black_color"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_accessories" />
+
+            <TextView
+                style="@style/Heading4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/storeBtnAccessories"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="ACCESSORIES" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_yellow_button"
+            android:padding="2dip" >
+
+            <ImageButton
+                android:id="@+id/storeBtnSpares"
+                android:layout_width="match_parent"
+                android:layout_height="100dip"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:layout_marginTop="2dip"
+                android:background="@color/black_color"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_spares" />
+
+            <TextView
+                style="@style/Heading4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/storeBtnSpares"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="SPARES" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spnStoreMoreCategories"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_below="@id/layoutHolderStoreOption"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:padding="10dip" />
+
+    <RelativeLayout
+        android:id="@+id/layoutRecentlyAdded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spnStoreMoreCategories"
+        android:layout_marginBottom="10dip"
+        android:background="@drawable/store_recentlyadded_text_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="RECENLTY ADDED"
+            android:textColor="@color/white_color" />
+    </RelativeLayout>
+
+    <GridLayout
+        android:id="@+id/storeRecentlyAddedGridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutRecentlyAdded"
+        android:gravity="center"
+        android:horizontalSpacing="2dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dp" />
+
+</RelativeLayout>

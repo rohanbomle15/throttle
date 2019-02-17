@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="200dip"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/MZHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/txtHeading"
+            style="@style/Heading2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnLeftMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:onClick="gotoLeftMenu"
+        android:background="@drawable/ic_drawer" />
+
+    <ImageButton
+        android:id="@+id/btnSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/ic_drawer"
+        android:onClick="gotoFavourite" />
+
+</RelativeLayout>

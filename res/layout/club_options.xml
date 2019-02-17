@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dip"
+    android:background="@color/header_and_button_color"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <TextView
+        android:id="@+id/clubOptionClubName"
+        style="@style/Heading2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:text="Club Name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/clubOptionClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/arrow_right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/clubOptionsJoin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/clubOptJoinButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/join_icon" />
+
+            <TextView
+                android:id="@+id/clubOptJoin"
+                style="@style/Heading5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clubOptJoinButton"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:text="Join"
+                android:textIsSelectable="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/clubOptionsRides"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/clubOptRidesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:padding="5dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/rides_icon" />
+
+            <TextView
+                android:id="@+id/clubOptRides"
+                style="@style/Heading5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clubOptRidesButton"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Rides"
+                android:textIsSelectable="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/clubOptionsRiders"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/clubOptRidersButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:padding="5dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/riders_icon" />
+
+            <TextView
+                android:id="@+id/clubOptRiders"
+                style="@style/Heading5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clubOptRidersButton"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Riders"
+                android:textIsSelectable="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/clubOptionsChat"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/clubOptChatButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:padding="5dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/chat_icon" />
+
+            <TextView
+                android:id="@+id/clubOptChat"
+                style="@style/Heading5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clubOptChatButton"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Chat"
+                android:textIsSelectable="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

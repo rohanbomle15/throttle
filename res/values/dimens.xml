@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="join_club_rider_img_width">60dip</dimen>
+    <dimen name="join_club_rider_img_height">60dip</dimen>
+    
+    <dimen name="join_club_rides_img_width">132dip</dimen>
+    <dimen name="join_club_rides_img_height">66dip</dimen>
+    
+    <dimen name="join_club_photos_img_width">131dip</dimen>
+    <dimen name="join_club_photos_img_height">110dip</dimen>
+    
+</resources>

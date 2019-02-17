@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tab_panel"
+    android:padding="20dip" >
+
+    <ScrollView
+        android:id="@+id/scrolldocs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/layoutBikesOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/edtDocsName"
+                style="@style/edit_text"
+                android:hint="Document name" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <FrameLayout
+                    android:id="@+id/frameDocsExpDateText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="0.5" >
+
+                    <EditText
+                        android:id="@+id/edtDocsExpDate"
+                        style="@style/edit_text"
+                        android:hint="Expiry Date" />
+
+                    <ImageView
+                        android:id="@+id/imgDocExpDatePicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dip"
+                        android:layout_gravity="right"
+                        android:src="@drawable/calender_icon" />
+                </FrameLayout>
+
+                <EditText
+                    android:id="@+id/edtDocsNumber"
+                    style="@style/edit_text"
+                    android:layout_weight="0.5"
+                    android:hint="Number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/image_holder"
+                android:orientation="horizontal"
+                android:padding="10dip"
+                android:weightSum="1.0" >
+
+                <ImageView
+                    android:id="@+id/imgDocUploadPic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/upload_border_bg"
+                    android:scaleType="center"
+                    android:src="@drawable/doc_icon" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txtDocsAddBikePhoto"
+                        style="@style/Heading4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add Doc photo" />
+                    
+                    <Button
+                        android:id="@+id/txtDocsOpenImageGallery"
+                        style="@style/btnOpenGallery"
+                        android:drawableLeft="@drawable/gallery_icon"
+                        android:text="@string/str_open_image_gallery"
+                        android:layout_marginBottom="10dip" />
+
+                    <Button
+                        android:id="@+id/txtDocsTakeAPhoto"
+                        style="@style/btnTakePhoto"
+                        android:drawableLeft="@drawable/camera_icon"
+                        android:text="@string/str_take_photo" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutBikesTwo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/scrolldocs"
+                android:layout_marginTop="10dip"
+                android:weightSum="1.0" >
+
+                <Button
+                    android:id="@+id/btnDocSave"
+                    style="@style/btnGrey"
+                    android:layout_marginRight="8dip"
+                    android:layout_weight="0.5"
+                    android:text="@string/str_btn_save" />
+
+                <Button
+                    android:id="@+id/btnDocRemove"
+                    style="@style/btnGrey"
+                    android:layout_marginRight="8dip"
+                    android:layout_weight="0.5"
+                    android:text="@string/str_btn_remove" />
+            </LinearLayout>
+
+            <GridLayout
+                android:id="@+id/docsGridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:horizontalSpacing="2dp"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="2dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
